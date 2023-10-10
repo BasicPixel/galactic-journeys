@@ -1,8 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Galactic Journeys",
@@ -34,7 +31,7 @@ export default function RootLayout({
         href="/favicon-16x16.png"
       />
       <link rel="manifest" href="/site.webmanifest"></link>
-      <body className={inter.className}>{children}</body>
+      <body className={"min-h-screen"}>{children}</body>
     </html>
   );
 }
